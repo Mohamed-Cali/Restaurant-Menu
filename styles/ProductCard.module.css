@@ -38,6 +38,10 @@
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.price {
+  position: relative;
+}
+
 .price_section {
   background-color: rgb(191, 188, 180);
   width: 55px;
