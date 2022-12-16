@@ -1,35 +1,36 @@
 import Image from "next/image";
 import styles from "../styles/Navbar.module.css";
+import MenuIcon from '@mui/icons-material/Menu';
+import Link from "next/link";
 
 const Navbar = () => {
+
+    const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      };
+
     return (
         <div className={styles.container}>
-            <div className={styles.item}>
-                <div className={styles.callButton}>
-                    <Image src="/img/telephone.png" alt="phone" width="32" height="32" />
-                </div>
-                <div className={styles.texts}>
-                    <div className={styles.text}>ORDER NOW!</div>
-                    <div className={styles.text}>8829 77 0062</div>
-                </div>
-            </div>
-            <div className={styles.item}>
+            
+                
+                    <Image src="/img/nandos-logo.png" alt='' className={styles.logo} width="40" height="40" />
+                
+               
+            
+            
                 <ul className={styles.list}>
-                    <li className={styles.listItem}>Homepage</li>
-                    <li className={styles.listItem}>Products</li>
-                    <li className={styles.listItem}>Menu</li>
-                    <Image src="/img/logo.png" alt="logo" width="69px" height="69px" />
-                    <li className={styles.listItem}>Events</li>
-                    <li className={styles.listItem}>Blog</li>
-                    <li className={styles.listItem}>Contact</li>
+                    <li className={styles.listItem} onClick={scrollToTop}>Home</li>
+                    
+                    <Link href='#menu'><a className={styles.listItem}>Menu</a></Link>
+        
+                    <Link href='#contact'><a className={styles.listItem}>Contact</a></Link>
                 </ul>
-            </div>
-            <div className={styles.item}>
-                <div className={styles.cart}>
-                    <Image src="/img/cart.png" alt="cart" width="30px" height="30px" />
-                    <div className={styles.counter}>2</div>
-                </div>
-            </div>
+            
+            
+                <MenuIcon className={styles.menuIcon}/>
         </div>
     );
 };

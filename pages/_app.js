@@ -3,7 +3,7 @@ import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
+    <Layout id='home'>
       <Component {...pageProps} />
     </Layout>
   )

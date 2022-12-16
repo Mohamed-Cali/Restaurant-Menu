@@ -3,22 +3,46 @@
     background-color: #5E503F;
     overflow: hidden;
     position: relative;
+    background: url(/img/tables3.jpg) center no-repeat;
+    background-size:cover;
+    
 }
 
 .wrapper {
-    width: 300vw;
+    width: 100%;
     height: 100%;
     display: flex;
+    flex-wrap: wrap; 
+    background: rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8) 0,
+        rgba(0, 0, 0, 0) 60%,
+        rgba(0, 0, 0, 0.8) 100%
+    );
 }
 
-.imgContainer {
-    width: 100vw;
-    height: 100%;
-    position: relative;
+
+
+
+.homeTitle {
+    color: white;
+    margin-left: 40px;
+    margin-top: 50px;
+    padding: 6px;
+    border-radius: 5px;
+
+    
 }
 
-@media screen and (max-width: 480px) {
-    .container{
-        height: 50vh;
+@media screen and (max-width: 600px) {
+    .homeTitle {
+        color: white;
+        margin-left: 20px;
+        margin-top: 50px;
+        padding: 6px;
+       
+    
+        
     }
 }

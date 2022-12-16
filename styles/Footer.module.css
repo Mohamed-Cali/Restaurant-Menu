@@ -1,13 +1,15 @@
 .container {
-    height: calc(100vh - 400px);
-    background-color: #222;
+    height: calc(100% - 400px);
+    background-color: rgb(6, 6, 6);
     display: flex;
+    flex-wrap: wrap; 
   }
   
   .item {
     flex: 1;
     position: relative;
     display: flex;
+    flex-wrap: wrap; 
   }
   
   .item:last-child {
@@ -23,7 +25,14 @@
   
   .title {
     font-size: 18px;
-    color: #b7903c;
+    color: #8b8066;
+  }
+
+  .phone {
+    font-size: 18px;
+    font-weight: 600;
+    color: #8b8066;
+    margin-bottom: 12px;
   }
   
   .text {
