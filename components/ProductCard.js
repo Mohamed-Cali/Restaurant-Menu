@@ -7,8 +7,8 @@ const ProductCard = ({ imgNo, title, desc, price}) => {
             <div className={styles.starter_desc}>
                 <h3>{title}</h3>
                 <p>{desc}</p>
-                <div className="price">
-                <p className={styles.price_section}>£{price}</p>
+                <div className={styles.price}>
+                    <p className={styles.price_section}>£{price}</p>
                 </div>
             </div>
             
