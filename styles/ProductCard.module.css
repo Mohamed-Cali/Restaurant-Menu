@@ -39,15 +39,14 @@
 }
 
 .price {
-  position: relative;
+  position: absolute;
+  bottom: -10px;
 }
 
 .price_section {
   background-color: rgb(191, 188, 180);
   width: 55px;
   margin-left: 10px;
-  position: absolute;
-  bottom: -10px;
   display: flex;
   flex-wrap: wrap; 
   flex-direction: row;
