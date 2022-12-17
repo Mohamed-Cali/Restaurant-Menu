@@ -41,18 +41,16 @@
 .price {
   position: absolute;
   bottom: -10px;
+  left: 25px;
 }
 
 .price_section {
   background-color: rgb(191, 188, 180);
   width: 55px;
-  margin-left: 10px;
-  display: flex;
-  justify-content: center;
-  border-radius: 2px;
-  margin-inline: auto;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: italic;
+  height: 22px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer; 
   color: rgb(32, 30, 30);
 }
 
