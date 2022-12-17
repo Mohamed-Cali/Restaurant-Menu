@@ -40,7 +40,7 @@
 
 .price {
   position: absolute;
-  bottom: -10px;
+  bottom: 0;
 }
 
 .price_section {
@@ -58,14 +58,13 @@
 }
 
 .add {
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  right: 25px;
   
 }
 
 .add_btn {
-  position: absolute;
-  bottom: -90px;
-  right: 25px;
   border: none;
   height: 23px;
   width: 32px;
